@@ -50,14 +50,9 @@ public class MainActivity extends ActionBarActivity {
 
         EditText Name2 = (EditText) findViewById(R.id.Name); //(EditText) -> Hacer un cast
 
-        EditText Surname2 = (EditText) findViewById(R.id.Surname);
-
         String nombre = Name2.getText().toString();
 
-        String apellido = Surname2.getText().toString();
-
         in.putExtra(NOM_USUARI, nombre);
-        in.putExtra(COGNOM_USUARI, apellido);
 
         startActivity(in);
     }
